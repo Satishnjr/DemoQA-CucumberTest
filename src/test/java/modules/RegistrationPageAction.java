@@ -69,7 +69,7 @@ public class RegistrationPageAction {
 	}
 
 	public static void verifyLogin(WebDriver driver) {
-		System.out.println("Already all my data is given");
+		System.out.println("All my data has stored already");
 		
 	}
 
