@@ -1,4 +1,4 @@
-package step_definitions;
+package helpers;
 
 import java.net.MalformedURLException;
 
@@ -24,7 +24,7 @@ public class Hooks {
 	public void openBrowser() throws MalformedURLException {
 		System.out.println("Called openBrowser");
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\chromedriver_win32\\2.33\\chromedriver.exe");
+				"C:\\chrome-driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -55,36 +55,3 @@ public class Hooks {
 
 	}
 }
-/*
- * @After public void embedScreenshot(ITestResult result) throws Throwable { if
- * (ITestResult.FAILURE == result.getStatus()) { try { TakesScreenshot ts =
- * (TakesScreenshot) driver; File source = ts.getScreenshotAs(OutputType.FILE);
- * 
- * FileUtils.copyFile(source, new File(
- * "D:\\BitBucket\\teluguvideos\\ScreenShots.jpeg")); //String res =
- * result.getName();
- * 
- * 
- * } catch (Exception e) {
- * 
- * System.out.println("Exception while Taking ScreenShot"); }
- * 
- * } } }
- */
-
-/*
- * @Before
- *//**
- * Delete all cookies at the start of each scenario to avoid shared state
- * between tests
- */
-/*
- * public static WebDriver openBrowserNexus() throws MalformedURLException {
- * System.out.println("Called openBrowser");
- * System.setProperty("webdriver.chrome.driver",
- * "C:\\chromedriver_win32\\2.33\\chromedriver.exe"); driver = new
- * ChromeDriver(); driver.manage().deleteAllCookies();
- * driver.manage().window().setSize(new Dimension(412, 732));
- * 
- * return driver; }
- */

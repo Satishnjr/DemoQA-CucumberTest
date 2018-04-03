@@ -1,8 +1,7 @@
 package modules;
 
-import org.openqa.selenium.By;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import pageobjects.RegistrationPageObjects;
@@ -66,6 +65,17 @@ public class RegistrationPageAction {
 		RegistrationPageObjects.submit.click();
 		
 		Thread.sleep(5000);
+		
+	}
+
+	public static void verifyLogin(WebDriver driver) {
+		System.out.println("Already all my data is given");
+		
+	}
+
+	public static void verifyErrorMessage(WebDriver driver) throws Throwable {
+		String errorMsg = RegistrationPageObjects.error_msg.getText();
+		Assert.assertEquals("* This field is required", errorMsg);
 		
 	}
 

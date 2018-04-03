@@ -1,7 +1,7 @@
 Feature: Navigation Testing Scenarios
 
   Scenario: Select Navigation for Header Menu
-    Given I open DemoQA website
-    Then I Verify all the links in menu
+    Given user open DemoQA website
+    Then user Verify all the links in menu
 
   

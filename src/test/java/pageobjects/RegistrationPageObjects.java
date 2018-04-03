@@ -31,7 +31,7 @@ public class RegistrationPageObjects extends BaseClass {
 
 	@FindBy(how = How.ID, using = "mm_date_8")
 	public static WebElement monthDropDown;
-
+	
 	@FindBy(how = How.ID, using = "dd_date_8")
 	public static WebElement dayDropDown;
 
@@ -55,4 +55,7 @@ public class RegistrationPageObjects extends BaseClass {
 
 	@FindBy(how = How.NAME, using = "pie_submit")
 	public static WebElement submit;
+	
+	@FindBy(how = How.CSS, using = "span[class='legend error']")
+	public static WebElement error_msg;
 }

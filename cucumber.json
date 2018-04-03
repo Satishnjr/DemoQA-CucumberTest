@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 35184434149,
+              "duration": 7862301830,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,80 @@
             }
           }
         ],
-        "line": 31,
+        "line": 3,
+        "name": "Select Navigation for Header Menu",
+        "description": "",
+        "id": "navigation-testing-scenarios;select-navigation-for-header-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 1384404058,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5235976904,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user open DemoQA website",
+            "match": {
+              "location": "HomePageSteps.user_open_DemoQA_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 250344796,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user Verify all the links in menu",
+            "match": {
+              "location": "HomePageSteps.user_Verify_all_the_links_in_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Navigation Testing Scenarios",
+    "description": "",
+    "id": "navigation-testing-scenarios",
+    "keyword": "Feature",
+    "uri": "features/Navigation.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4778492768,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 18,
         "name": "Verify that the new user registration is successful after passing correct inputs.",
         "description": "",
         "id": "new-user-registration;verify-that-the-new-user-registration-is-successful-after-passing-correct-inputs.;;2",
         "after": [
           {
             "result": {
-              "duration": 6817130695,
+              "duration": 1081116126,
               "status": "passed"
             },
             "match": {
@@ -34,47 +100,47 @@
         "steps": [
           {
             "result": {
-              "duration": 40843402192,
+              "duration": 3624595921,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I open demoqa website",
+            "line": 5,
+            "name": "user open demoqa website",
             "match": {
-              "location": "RegistrationPageSteps.i_open_demoqa_website()"
+              "location": "RegistrationPageSteps.user_open_demoqa_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 32065143852,
+              "duration": 1011908881,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I click on registration link",
+            "line": 6,
+            "name": "user click on registration link",
             "match": {
-              "location": "RegistrationPageSteps.i_click_on_registration_link()"
+              "location": "RegistrationPageSteps.user_click_on_registration_link()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 635236853,
+              "duration": 300896491,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I enter \"\" \"\" in input box",
+            "line": 7,
+            "name": "user enter \"Satish\" \"N\" in input box",
             "match": {
               "arguments": [
                 {
-                  "val": "",
-                  "offset": 9
+                  "val": "Satish",
+                  "offset": 12
                 },
                 {
-                  "val": "",
-                  "offset": 12
+                  "val": "N",
+                  "offset": 21
                 }
               ],
-              "location": "RegistrationPageSteps.i_enter_in_input_box(String,String)"
+              "location": "RegistrationPageSteps.user_enter_in_input_box(String,String)"
             },
             "matchedColumns": [
               0,
@@ -84,83 +150,83 @@
           },
           {
             "result": {
-              "duration": 339484217,
+              "duration": 105375226,
               "status": "passed"
             },
-            "line": 22,
-            "name": "I select Single radio button",
+            "line": 8,
+            "name": "user select Single radio button",
             "match": {
-              "location": "RegistrationPageSteps.i_select_Single_radio_button()"
+              "location": "RegistrationPageSteps.user_select_Single_radio_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 302929807,
+              "duration": 87499716,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I select Cricket check box",
+            "line": 9,
+            "name": "user select Cricket check box",
             "match": {
-              "location": "RegistrationPageSteps.i_select_Cricket_check_box()"
+              "location": "RegistrationPageSteps.user_select_Cricket_check_box()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 502308170,
+              "duration": 142295022,
               "status": "passed"
             },
-            "line": 24,
-            "name": "I select Country from dropdown",
+            "line": 10,
+            "name": "user select Country from dropdown",
             "match": {
-              "location": "RegistrationPageSteps.i_select_Country_from_dropdown()"
+              "location": "RegistrationPageSteps.user_select_Country_from_dropdown()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2035685975,
+              "duration": 675534643,
               "status": "passed"
             },
-            "line": 25,
-            "name": "I select Date of Birth from dropdown",
+            "line": 11,
+            "name": "user select Date of Birth from dropdown",
             "match": {
-              "location": "RegistrationPageSteps.i_select_Date_of_Birth_from_dropdown()"
+              "location": "RegistrationPageSteps.user_select_Date_of_Birth_from_dropdown()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3470908167,
+              "duration": 1006809962,
               "status": "passed"
             },
-            "line": 26,
-            "name": "I enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@123\" \"Satish@123\" in input box",
+            "line": 12,
+            "name": "user enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@123\" \"Satish@123\" in input box",
             "match": {
               "arguments": [
                 {
                   "val": "8309713319",
-                  "offset": 9
+                  "offset": 12
                 },
                 {
                   "val": "Satishnj",
-                  "offset": 22
+                  "offset": 25
                 },
                 {
                   "val": "sksatishreddy@gmail.com",
-                  "offset": 33
+                  "offset": 36
                 },
                 {
                   "val": "Satish@123",
-                  "offset": 59
+                  "offset": 62
                 },
                 {
                   "val": "Satish@123",
-                  "offset": 72
+                  "offset": 75
                 }
               ],
-              "location": "RegistrationPageSteps.i_enter_in_input_box(String,String,String,String,String)"
+              "location": "RegistrationPageSteps.user_enter_in_input_box(String,String,String,String,String)"
             },
             "matchedColumns": [
               2,
@@ -173,15 +239,234 @@
           },
           {
             "result": {
-              "duration": 5325983648,
+              "duration": 5984777228,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on submit button",
+            "match": {
+              "location": "RegistrationPageSteps.user_click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212116,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should be able to login successfully",
+            "match": {
+              "location": "RegistrationPageSteps.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@positive"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4733409484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Verify that the new user registration is unsuccessful after passing incorrect inputs.",
+        "description": "",
+        "id": "new-user-registration;verify-that-the-new-user-registration-is-unsuccessful-after-passing-incorrect-inputs.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1140180701,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5434816765,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user open demoqa website",
+            "match": {
+              "location": "RegistrationPageSteps.user_open_demoqa_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3893503038,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user click on registration link",
+            "match": {
+              "location": "RegistrationPageSteps.user_click_on_registration_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 261147336,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user enter \"\" \"\" in input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 12
+                },
+                {
+                  "val": "",
+                  "offset": 15
+                }
+              ],
+              "location": "RegistrationPageSteps.user_enter_in_input_box(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111777206,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user select Single radio button",
+            "match": {
+              "location": "RegistrationPageSteps.user_select_Single_radio_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121434488,
               "status": "passed"
             },
             "line": 27,
-            "name": "I click on submit button, then the user registration should be successful",
+            "name": "user select Cricket check box",
             "match": {
-              "location": "RegistrationPageSteps.i_click_on_submit_button_then_the_user_registration_should_be_successful()"
+              "location": "RegistrationPageSteps.user_select_Cricket_check_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135075796,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user select Country from dropdown",
+            "match": {
+              "location": "RegistrationPageSteps.user_select_Country_from_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 657491921,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user select Date of Birth from dropdown",
+            "match": {
+              "location": "RegistrationPageSteps.user_select_Date_of_Birth_from_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 867202745,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@123\" \"Satish@123\" in input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8309713319",
+                  "offset": 12
+                },
+                {
+                  "val": "Satishnj",
+                  "offset": 25
+                },
+                {
+                  "val": "sksatishreddy@gmail.com",
+                  "offset": 36
+                },
+                {
+                  "val": "Satish@123",
+                  "offset": 62
+                },
+                {
+                  "val": "Satish@123",
+                  "offset": 75
+                }
+              ],
+              "location": "RegistrationPageSteps.user_enter_in_input_box(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5088906698,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user click on submit button",
+            "match": {
+              "location": "RegistrationPageSteps.user_click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114173351,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user should not be able to login",
+            "match": {
+              "location": "RegistrationPageSteps.user_should_not_be_able_to_login()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@negative"
           }
         ]
       }

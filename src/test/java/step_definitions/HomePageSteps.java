@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import pageobjects.HomePageObjects;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import helpers.Hooks;
 
 public class HomePageSteps {
 	public WebDriver driver;
@@ -21,13 +22,13 @@ public class HomePageSteps {
 		PageFactory.initElements(driver, HomePageObjects.class);
 	}
 
-	@Given("^I open DemoQA website$")
-	public void i_open_DemoQA_website() throws Throwable {
+	@Given("^user open DemoQA website$")
+	public void user_open_DemoQA_website() throws Throwable {
 		driver.get("http://demoqa.com/");
 	}
 
-	@Then("^I Verify all the links in menu$")
-	public void i_Verify_all_the_links_in_menu() throws Throwable {
+	@Then("^user Verify all the links in menu$")
+	public void user_Verify_all_the_links_in_menu() throws Throwable {
 		HomePageAction.verifyHeaderLinks(driver);
 
 	}
