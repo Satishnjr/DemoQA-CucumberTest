@@ -1,11 +1,19 @@
 package helpers;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import org.junit.runner.RunWith;
 
-//@RunWith(Cucumber.class)
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
 @CucumberOptions(features = "classpath:features", plugin = { "pretty",
 		"html:target/cucumber-html-report", "json:cucumber.json" }, tags = {}, monochrome=true, glue = {"helpers","step_definitions"})
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class TestRunner{
 
 }
+
+
+//to run TestNG classes,then remove @RunWith tag
+/*public class TestRunner extends AbstractTestNGCucumberTests {
+
+}*/
